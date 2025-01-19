@@ -32,8 +32,8 @@ function FormRowDayPicker({ label, ...rest }: FormRowDayPickerProps) {
     }
   };
   return (
-    <div className="flex items-center space-x-4">
-      <label className="w-40">{label}</label>
+    <div className="w-full flex flex-col space-y-2">
+      <label className="">{label}</label>
       <DatePicker 
         selectedRangeString={selectedRangeString} 
         selectedRange={selectedRange} 

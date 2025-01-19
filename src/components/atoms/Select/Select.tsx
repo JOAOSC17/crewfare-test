@@ -4,7 +4,7 @@ interface SelectType extends SelectHTMLAttributes<HTMLSelectElement>{
 }
 function Select({ options, className }: SelectType) {
   return (
-    <select className={`w-full bg-gray-700 p-2 rounded-md ${className}`}>
+    <select className={`w-full bg-zinc-800 p-2 rounded-md ${className}`}>
       {options.map((option, index) => (
         <option key={index} value={option}>
           {option}

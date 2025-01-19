@@ -22,9 +22,9 @@ function DatePicker ({
 }: DatePickerType) {
     const defaultClassNames = getDefaultClassNames();
   return (
-    <div className="relative w-64">
+    <div className="relative w-full">
     <button
-      className="flex justify-between whitespace-nowrap bg-gray-700 items-center rounded-md px-3 py-2"
+      className="w-full flex justify-between whitespace-nowrap bg-zinc-800 items-center rounded-md px-3 py-2"
       onClick={() => setShowPicker((prev) => !prev)}
     >
       <span className="text-white">{selectedRangeString}</span>

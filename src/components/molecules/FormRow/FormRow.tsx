@@ -7,8 +7,8 @@ interface FormRowProps {
   }
 function FormRow({ label, inputType, placeholder, ...rest }: FormRowProps) {
   return (
-    <div className="flex items-center space-x-4">
-      <label className="w-40">{label}</label>
+    <div className="w-full flex flex-col space-y-2">
+      <label className="">{label}</label>
       <Input type={inputType} placeholder={placeholder} {...rest} />
     </div>
   );

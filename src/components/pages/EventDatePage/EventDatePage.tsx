@@ -5,7 +5,7 @@ import EventDateTemplate from '../../templates/EventDateTemplate/EventDatePageTe
 
 function EventDatePage() {
   return (
-    <div className="min-h-screen bg-zinc-900 text-white flex">
+    <div className="min-h-screen text-white flex">
       <Sidebar />
       <EventDateTemplate/>
     </div>

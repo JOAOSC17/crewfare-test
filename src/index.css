@@ -9,6 +9,18 @@
 .border-extra-thin{
   border: .01rem solid rgba(255, 255, 255, 0.2);
 }
+.bg-darker-gray {
+  background-color: #141416;
+}
+.bg-light-gray {
+  background-color: #1D1D1F;
+}
+.bg-indigo {
+  background-color: #4323FF;
+}
+.text-indigo {
+  color: #4323FF;
+}
 /* .rdp-root {
   --rdp-accent-color: blue;
 }*/

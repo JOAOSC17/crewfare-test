@@ -4,7 +4,7 @@ import EventDetailsTemplate from '../../templates/EventDetailTemplate/EventDetai
 
 function EventDetailsPage() {
   return (
-    <div className="min-h-screen bg-zinc-900 text-white flex">
+    <div className="min-h-screen text-white flex">
       <Sidebar />
       <EventDetailsTemplate />
     </div>

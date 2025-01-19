@@ -6,7 +6,7 @@ interface ButtonType extends ButtonHTMLAttributes<HTMLButtonElement> {
 function Button({ children, onClick, className }: ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button
-      className={`bg-blue-600 px-4 py-2 rounded-md ${className}`}
+      className={`bg-indigo px-4 py-2 rounded-md ${className}`}
       onClick={onClick}
     >
       {children}

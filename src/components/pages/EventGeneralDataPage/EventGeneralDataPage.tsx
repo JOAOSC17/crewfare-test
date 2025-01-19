@@ -4,7 +4,7 @@ import EventGeneralDataTemplate from '../../templates/EventGeneralDataTemplate/E
 
 function EventGeneralDataPage() {
   return (
-    <div className="min-h-screen bg-zinc-900 text-white flex">
+    <div className="min-h-screen text-white flex">
       <Sidebar />
       <EventGeneralDataTemplate />
     </div>

@@ -6,7 +6,7 @@ import EventDetailsPage from './components/pages/EventDetailPage/EventDetailPage
 import EventDatePage from './components/pages/EventDatePage/EventDatePage';
 function App() {
   return (
-    <div className="min-h-screen bg-zinc-900 text-white">
+    <div className="min-h-screen bg-light-gray text-white">
       
       <Header/>
       <div className="ml-44">

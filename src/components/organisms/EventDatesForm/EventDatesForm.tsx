@@ -3,6 +3,7 @@ import FormRow from '../../molecules/FormRow/FormRow';
 import DatePicker from '../../atoms/DatePicker/DatePicker';
 import FormRowDayPicker from '../../molecules/FormRowDayPicker/FormRowDayPicker';
 import FormRowSelect from '../../molecules/FormRowSelect/FormRowSelect';
+import DeleteButton from '../../atoms/DeleteButton/DeleteButton';
 
 function EventDatesForm () {
   return (
@@ -17,9 +18,12 @@ function EventDatesForm () {
       <FormRowDayPicker label="Default Check-In & Check-Out Dates"/>
 
       <h3 className="text-lg mt-6 mb-4">Taxes & Fees</h3>
+      <div className="flex justify-between items-center space-x-2">
       <FormRow label="Name" inputType="text" />
       <FormRow label="Amount" inputType="number" />
       <FormRowSelect label="Type" inputType="select" options={['Fixed', 'Percentage']} />
+        <DeleteButton />
+      </div>
 
       <div className="flex items-center space-x-2">
         <button type="button" className="text-green-400">+ Add New Tax/Fee</button>

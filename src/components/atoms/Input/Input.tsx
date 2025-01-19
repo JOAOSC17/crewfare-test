@@ -5,7 +5,7 @@ function Input({ type, placeholder, className, ...rest }: InputProps)  {
     <input
       type={type}
       placeholder={placeholder}
-      className={`w-full bg-gray-700 p-2 rounded-md text-white ${className}`}
+      className={`w-full bg-zinc-800 p-2 rounded-md text-white ${className}`}
       {...rest}
     />
   );
