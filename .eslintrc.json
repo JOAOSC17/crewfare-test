@@ -6,7 +6,12 @@
       "plugin:@typescript-eslint/recommended"
     ],
     "rules": {
-      "@typescript-eslint/no-unused-expressions":"warn"
+    "@typescript-eslint/no-unused-expressions": [
+        "error",
+        {
+          "allowShortCircuit": true
+        }
+      ]    
     },
     "parserOptions": {
       "ecmaVersion": 2020,
