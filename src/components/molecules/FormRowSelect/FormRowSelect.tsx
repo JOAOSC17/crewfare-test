@@ -11,7 +11,7 @@ function FormRowSelect({ label, options, ...rest }: FormRowSelectProps) {
   return (
     <div className="w-full flex flex-col space-y-2">
       <label className="">{label}</label>
-      <Select options={options} />
+      <Select options={options} {...rest}/>
     </div>
   );
 }
