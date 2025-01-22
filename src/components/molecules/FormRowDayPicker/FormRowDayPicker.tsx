@@ -10,7 +10,6 @@ type SelectedRangeType = {
     to: Date | undefined;
 }
 type handleDateSelectType = (range: DateRange | undefined) => void 
-type DatePickerType = SelectedRangeType & handleDateSelectType
 function FormRowDayPicker({ label, ...rest }: FormRowDayPickerProps) {
   const [showPicker, setShowPicker] = useState(false);
   const [selectedRange, setSelectedRange] = useState<SelectedRangeType>({ from: undefined, to:  undefined });
@@ -21,7 +20,7 @@ function FormRowDayPicker({ label, ...rest }: FormRowDayPickerProps) {
   } - ${
     selectedRange.to ? selectedRange.to.toLocaleDateString() : "DD/MM/YYYY"
   }`;
-  const handleDateSelect = (range: DateRange | undefined) => {
+  const handleDateSelect: handleDateSelectType = (range) => {
     setSelectedRange({
       from: range?.from,
       to: range?.to,
@@ -34,6 +33,7 @@ function FormRowDayPicker({ label, ...rest }: FormRowDayPickerProps) {
     <div className="w-full flex flex-col space-y-2">
       <label className="">{label}</label>
       <DatePicker 
+        {...rest}
         selectedRangeString={selectedRangeString} 
         selectedRange={selectedRange} 
         handleDateSelect={handleDateSelect} 

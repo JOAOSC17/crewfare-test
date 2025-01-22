@@ -1,7 +1,6 @@
 import React from 'react';
 import BannerUploader from '../../molecules/BannerUploader/BannerUploader';
 import Checkbox from '../../atoms/Checkbox/Checkbox';
-import Button from '../../atoms/Button/Button';
 import FormRow from '../../molecules/FormRow/FormRow';
 import FormRowSelect from '../../molecules/FormRowSelect/FormRowSelect';
 
@@ -16,7 +15,6 @@ function EventForm() {
         <BannerUploader />
         <Checkbox id="overlayTitle" label="Overlay Title on Banner" />
         <div className="flex justify-end">
-        {/* <Button>Save</Button> */}
         </div>
       </div>
     </div>

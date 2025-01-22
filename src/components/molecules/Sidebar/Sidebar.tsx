@@ -1,6 +1,6 @@
 import React from 'react';
 import SidebarStep from '../../atoms/SidebarStep/SidebarStep';
-import { useLocation, useSearchParams } from 'react-router';
+import { useLocation } from 'react-router';
 
 function Sidebar() {
   const {pathname} = useLocation();

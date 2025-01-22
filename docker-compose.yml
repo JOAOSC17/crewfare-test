@@ -7,11 +7,11 @@ services:
       - "3000:3000"
     volumes:
       - .:/src
-    command: yarn start
+    command: npm start
 
   test:
     build:
       context: .
     volumes:
       - .:/src
-    command: yarn test
+    command: npm test

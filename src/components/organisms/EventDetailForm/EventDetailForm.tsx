@@ -1,6 +1,5 @@
 import React from 'react';
 import FormRow from '../../molecules/FormRow/FormRow';
-import Button from '../../atoms/Button/Button';
 
 function EventDetailsForm() {
   return (
@@ -14,9 +13,6 @@ function EventDetailsForm() {
         <FormRow label="Featured Hotels Title" inputType="text" />
         <FormRow label="Minimum Nights" inputType="number" min="1" />
       </div>
-      {/* <div className="flex justify-end">
-        <Button>Save</Button>
-      </div> */}
     </form>
   );
 }

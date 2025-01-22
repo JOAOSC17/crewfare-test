@@ -1,8 +1,6 @@
 import React, { ButtonHTMLAttributes } from 'react';
 
-interface ButtonType extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant: 'regular' | 'error' | 'secondary'
-}
+
 function DeleteButton({ onClick, className }: ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button onClick={onClick} className={`flex mt-5 ${className}`}>

@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
 import FormRow from '../../molecules/FormRow/FormRow';
-import DatePicker from '../../atoms/DatePicker/DatePicker';
 import FormRowDayPicker from '../../molecules/FormRowDayPicker/FormRowDayPicker';
 import FormRowSelect from '../../molecules/FormRowSelect/FormRowSelect';
 import DeleteButton from '../../atoms/DeleteButton/DeleteButton';
-type SelectedRangeType = {
-  from: Date | undefined;
-  to: Date | undefined;
-}
 interface InputsTaxesFeesType {
   name: string;
   amount: number;

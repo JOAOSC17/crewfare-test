@@ -1,8 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
 
-interface ButtonType extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant: 'regular' | 'error' | 'secondary'
-}
 function Button({ children, onClick, className }: ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button

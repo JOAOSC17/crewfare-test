@@ -1,6 +1,5 @@
-import React from 'react';
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
-function Input({ type, placeholder, className, ...rest }: InputProps)  {
+import React, { InputHTMLAttributes } from 'react';
+function Input({ type, placeholder, className, ...rest }: InputHTMLAttributes<HTMLInputElement>)  {
   return (
     <input
       type={type}

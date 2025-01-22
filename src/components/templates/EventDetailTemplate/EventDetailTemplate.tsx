@@ -2,6 +2,7 @@ import React from 'react';
 import EventDetailsForm from '../../organisms/EventDetailForm/EventDetailForm';
 import ChevronGroup from '../../molecules/ChevronGroup/ChevronGroup';
 import { useNavigate } from 'react-router';
+import Button from '../../atoms/Button/Button';
 
 function EventDetailsTemplate() {
   const navegate = useNavigate()
@@ -16,6 +17,9 @@ function EventDetailsTemplate() {
         <h2 className="text-xl mb-4">Details</h2> 
         <EventDetailsForm />
         <ChevronGroup foward={foward} previously={previously}/>
+       <div className="flex justify-end mt-9">
+        <Button>Save</Button>
+      </div>
     </div>
   );
 }

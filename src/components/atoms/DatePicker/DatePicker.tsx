@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { DateRange, DayPicker, getDefaultClassNames } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 interface SelectedRangeType {
