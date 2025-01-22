@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { DateRange, DayPicker, getDefaultClassNames } from "react-day-picker";
 import "react-day-picker/dist/style.css";
-import calendarIcon from './calendarIcon.svg';
 interface SelectedRangeType {
     from: Date | undefined;
     to: Date | undefined;
@@ -28,7 +27,17 @@ function DatePicker ({
       onClick={() => setShowPicker((prev) => !prev)}
     >
       <span className="text-white">{selectedRangeString}</span>
-      <img className="pl-1" src={calendarIcon} alt=""/>
+      <div className="pl-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M3 7.5C3 5.29086 4.79086 3.5 7 3.5H17C19.2091 3.5 21 5.29086 21 7.5V18C21 20.2091 19.2091 22 17 22H7C4.79086 22 3 20.2091 3 18V7.5Z" stroke="#4FF6B1" strokeWidth="1.5"/>
+<path d="M3 9H21" stroke="#4FF6B1" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M8 2L8 5" stroke="#4FF6B1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 2V5" stroke="#4FF6B1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<circle cx="12" cy="15" r="1" fill="#4FF6B1"/>
+<circle cx="16" cy="15" r="1" fill="#4FF6B1"/>
+<circle cx="8" cy="15" r="1" fill="#4FF6B1"/>
+</svg>
+      </div>
     </button>
 
     {showPicker && (
@@ -36,6 +45,7 @@ function DatePicker ({
         <DayPicker mode="range" 
         selected={selectedRange}
         onSelect={handleDateSelect}
+        data-testid="dialog"
         classNames={{
             today: "border-blue-500 text-blue-400",
             selected: "bg-blue-500 border-blue-500 text-white",

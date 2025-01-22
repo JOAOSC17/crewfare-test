@@ -21,7 +21,6 @@ function FormRowDayPicker({ label, ...rest }: FormRowDayPickerProps) {
   } - ${
     selectedRange.to ? selectedRange.to.toLocaleDateString() : "DD/MM/YYYY"
   }`;
-  console.log(selectedRange)
   const handleDateSelect = (range: DateRange | undefined) => {
     setSelectedRange({
       from: range?.from,
