@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { InputHTMLAttributes } from 'react';
 import Input from '../../atoms/Input/Input';
-interface FormRowProps {
+interface FormRowProps extends InputHTMLAttributes<HTMLInputElement> {
     label: string;
     inputType: string;
-    [key: string]: string;
   }
 function FormRow({ label, inputType, placeholder, ...rest }: FormRowProps) {
   return (
